@@ -1,37 +1,3 @@
-// async function startStreaming(element) {
-//   const canCreate = await window.ai.canCreateTextSession();
-//   if (canCreate !== "no") {
-//       const session = await window.ai.createTextSession();
-//       const stream = session.promptStreaming(element);
-//       for await (const chunk of stream) {
-//         if (element.tagName === 'INPUT') {
-//           if (element.tagName === 'INPUT') {
-//               element.value = chunk;
-//             }
-//           } else {
-//             const contentEditableElement = element;
-//             contentEditableElement.innerHTML = chunk;
-
-//       }
-//       console.log('Chunk:', chunk);
-//   }
-// }
-// }
-
-// document.addEventListener('focusin', () => {
-//   const focusedElement = document.activeElement;
-//   console.log('The focused element is:', focusedElement);
-//   const isEditable = focusedElement !== null && 
-//                      (focusedElement.tagName === 'INPUT' || 
-//                       focusedElement.tagName === 'TEXTAREA' || 
-//                       focusedElement.hasAttribute('contenteditable'));
-//   console.log('Is the focused element editable?', isEditable);
-//   if (isEditable) {
-//         startStreaming(focusedElement);
-//     }
-//   }
-// )
-
 async function startStreamingMeaning(text, pos) {
   const canCreate = await window.ai.canCreateTextSession();
   if (canCreate !== "no") {
