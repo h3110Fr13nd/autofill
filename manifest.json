@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "AutoFill",
+    "description": "The time to read the page",
+    "version": "1.0",
+    "action": {
+        "default_icon": "images/abc.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/content.js"]
+        }
+    ],
+    "permissions": ["activeTab", "scripting"]
+}
